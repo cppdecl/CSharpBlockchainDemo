@@ -33,6 +33,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.richTextBox1);
@@ -58,17 +60,17 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(409, 196);
+            this.comboBox1.Location = new System.Drawing.Point(51, 191);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(170, 23);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "Choose Node";
             this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 192);
+            this.button1.Location = new System.Drawing.Point(439, 187);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 28);
             this.button1.TabIndex = 1;
@@ -86,6 +88,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 194);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Node:";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -96,6 +107,7 @@
             this.Name = "mainForm";
             this.Text = "CSharpBlockchainDemo | CPPDECL";
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -107,5 +119,6 @@
         private ComboBox comboBox1;
         private Button button1;
         private Button button2;
+        private Label label1;
     }
 }

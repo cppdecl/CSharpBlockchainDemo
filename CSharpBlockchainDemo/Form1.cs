@@ -25,5 +25,11 @@ namespace CSharpBlockchainDemo
             this.Text = "Node " + id.ToString();
 
         }
+
+        public void SetNewIncomingData(string data)
+        {
+            richTextBox2.Text = data;
+            richTextBox1.AppendText("Received new data to be validated or mined.\nData: " + data + "\n");
+        }
     }
 }
